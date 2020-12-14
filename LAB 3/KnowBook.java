@@ -22,8 +22,8 @@ public String toString(){
 void GetDetails(){
   Scanner in = new Scanner(System.in);
   System.out.println("Enter booktitle, author, no_of_pages and price");
-  booktitle=in.next();
-  author=in.next();
+  booktitle=in.nextLine();
+  author=in.nextLine();
   no_of_pages=in.nextInt();
   price = in.nextDouble();
 }
@@ -52,6 +52,8 @@ class KnowBook{
       System.out.println(b[i]);
       System.out.println();
     }
+  }
+}
     /*for(int i=0;i<n;i++){
       b[i].SetDeatils();
       System.out.println();
